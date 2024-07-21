@@ -15,7 +15,7 @@ function run(){
                 type: 'POST',
                 async: false,
                 url: '/index/service/summary_forms',
-                data: {'by':'nodcloud.com'},
+                data: {'by':'KAITUOCN.COM'},
             	dataType: "json",
                 success: function(resule){
                     form_arr=resule;
@@ -61,7 +61,7 @@ function start(){
             }
         }, 5130);
     });
-    
+
 }
 //加入数据
 function set_textarea(val){

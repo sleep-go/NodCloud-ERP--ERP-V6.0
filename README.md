@@ -19,11 +19,11 @@
 [http://v6.yimiaonet.com/](http://v6.yimiaonet.com/)   帐号：admin   密码：admin888
 
 ###  :fa-check-square-o: V7珍藏款
-[https://v7.nodcloud.com/](https://v7.nodcloud.com/#/#git)   
+[https://v7.KAITUOCN.COM/](https://v7.KAITUOCN.COM/#/#git)   
 V7商业版（V7版是付费的 售价299起） 采用tp+vue开发，速度更流畅，功能更齐全。（暂不出售） 
 
 ###  :congratulations: V8版本开放公测，更多功能等你来探索，演示请直接扫码进群 :congratulations: 
-[https://erp.nodcloud.com/](https://erp.nodcloud.com/#/#git)   
+[https://erp.KAITUOCN.COM/](https://erp.KAITUOCN.COM/#/#git)   
 V8全新商业版（V8版是付费的 售价399起） 采用larvae10   vue3开发，速度更流畅，功能更齐全。 
 购买v8可以联系我，限时折扣 
 

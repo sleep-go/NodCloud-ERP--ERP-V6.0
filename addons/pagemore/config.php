@@ -20,7 +20,7 @@ class Config {
             'info'=>'页面[JS,CSS]静态文件扩展',
             'only'=>'pagemore',
             'ver'=>'1.0',
-            'author'=>'NODCLOUD.COM'
+            'author'=>'KAITUOCN.COM'
         ];
     }
     //安装
@@ -55,7 +55,7 @@ class Config {
         if(empty($plug_find)){
             //创建插件信息
             $plug_info=$this->info();//读取配置信息
-            $plug_info['config']=json_encode(['by'=>'nodcloud.com']);//插件配置
+            $plug_info['config']=json_encode(['by'=>'KAITUOCN.COM']);//插件配置
             $plug_info['state']=1;//开启插件
             Plug::create($plug_info);
         }
@@ -80,7 +80,7 @@ class Config {
     }
     //卸载
     public function uninstall(){
-        //1.删除插件记录 
+        //1.删除插件记录
         Plug::where(['only'=>$this->only])->delete();
         //2.删除插件记录
         Action::where(['value'=>$this->entry])->delete();

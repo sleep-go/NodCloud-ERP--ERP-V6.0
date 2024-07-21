@@ -4,20 +4,20 @@
 function get_ver(){
     return file_get_contents($_SERVER['DOCUMENT_ROOT'].DS.'application'.DS.'index'.DS.'ver');
 }
-//获取文件夹大小  
+//获取文件夹大小
 function get_dir_size($dir){
     static $sizeResult = 0;
     $handle = opendir($dir);
-    while (false!==($FolderOrFile = readdir($handle)))  {   
-        if($FolderOrFile != "." && $FolderOrFile != "..")   {   
-            if(is_dir("$dir/$FolderOrFile")){   
-                $sizeResult += get_dir_size("$dir/$FolderOrFile");   
-            }else{   
-                $sizeResult += filesize("$dir/$FolderOrFile");   
-            }  
-        }      
-    }  
-    closedir($handle);  
+    while (false!==($FolderOrFile = readdir($handle)))  {
+        if($FolderOrFile != "." && $FolderOrFile != "..")   {
+            if(is_dir("$dir/$FolderOrFile")){
+                $sizeResult += get_dir_size("$dir/$FolderOrFile");
+            }else{
+                $sizeResult += filesize("$dir/$FolderOrFile");
+            }
+        }
+    }
+    closedir($handle);
     return round(($sizeResult/1048576),2);
 }
 //二维数组返回指定键名集合
@@ -105,7 +105,7 @@ function more_table_find($arr){
     }
     return $resule;
 }
-//删除目录  
+//删除目录
 function removedir($dirName){
     if(!is_dir($dirName)){
         return false;
@@ -326,7 +326,7 @@ function export_excel($file_name,$data,$down=true){
     $PHPExcel=new PHPExcel();//实例化
     $cellname=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG','AH','AI','AJ','AK','AL','AM','AN','AO','AP','AQ','AR','AS','AT','AU','AV','AW','AX','AY','AZ'];//列标识
     $shell=$PHPExcel->getActiveSheet (0);//当前工作簿
-	$shell->setTitle ('NODCLOUD.COM');//工作簿名称
+	$shell->setTitle ('KAITUOCN.COM');//工作簿名称
     $shell->getDefaultColumnDimension()->setWidth(13);//设置默认行宽
     $shell->getDefaultRowDimension()->setRowHeight(16);//设置默认行高
     $shell->getDefaultStyle()->getFont()->setName('宋体');//设置默认字体
@@ -463,7 +463,7 @@ function zh2py($text,$type='head'){
     $nod=new \org\zh2py();
     $resule=$nod::encode($text,$type);
     return strtolower($resule);//返回结果转小写
-    
+
 }
 //生成条形码
 //$type[true:直接输出|false:保存文件]
@@ -493,7 +493,7 @@ function  txm($text,$type=true){
 		$code->setBackgroundColor ($color_white);
 		// 空白间隙颜色
 		$code->setFont ($font);
-		// 
+		//
 		$code->parse ($text);
 		// 条形码需要的数据内容
 	}
@@ -559,7 +559,7 @@ function arraychange($arr,$key){
 	return array_unique(array_column($arr,$key));
 }
 //查询数组指定字段合并赋值
-//$type merge 组合 intersect 交集 
+//$type merge 组合 intersect 交集
 function sql_assign(&$sql,$field,$data,$type='merge'){
     if(isset($sql[$field])){
         if($type=='merge'){
@@ -617,15 +617,15 @@ function arrs_key_del(&$arr,$condition){
 //GET POST提交
 function http($url,$param,$action="GET"){
 	$ch=curl_init();
-	$config=array(CURLOPT_RETURNTRANSFER=>true,CURLOPT_URL=>$url);	
+	$config=array(CURLOPT_RETURNTRANSFER=>true,CURLOPT_URL=>$url);
 	if($action=="POST"){
-		$config[CURLOPT_POST]=true;		
+		$config[CURLOPT_POST]=true;
 	}
 	$config[CURLOPT_POSTFIELDS]=http_build_query($param);
 	curl_setopt_array($ch,$config);
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-	$result=curl_exec($ch);	
+	$result=curl_exec($ch);
 	curl_close($ch);
 	return $result;
 }

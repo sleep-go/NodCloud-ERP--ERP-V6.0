@@ -20,7 +20,7 @@ class Config {
             'info'=>'扩展模块字段信息',
             'only'=>'formmore',
             'ver'=>'1.0',
-            'author'=>'NODCLOUD.COM'
+            'author'=>'KAITUOCN.COM'
         ];
     }
     //安装
@@ -55,7 +55,7 @@ class Config {
         if(empty($plug_find)){
             //创建插件信息
             $plug_info=$this->info();//读取配置信息
-            $plug_info['config']=json_encode(['by'=>'nodcloud.com']);//插件配置
+            $plug_info['config']=json_encode(['by'=>'KAITUOCN.COM']);//插件配置
             $plug_info['state']=1;//开启插件
             Plug::create($plug_info);
         }

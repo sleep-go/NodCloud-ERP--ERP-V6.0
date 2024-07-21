@@ -30,7 +30,7 @@ function set_merchant(){
                     });
                     //获取信息
                     ajax('POST','/index/service/get_merchant',{
-                        "by": 'nodcloud.com'
+                        "by": 'KAITUOCN.COM'
                     },function(resule){
                         plug.selectdata=resule.info;//赋值插件数据
                         plug.render_data();//渲染插件内容

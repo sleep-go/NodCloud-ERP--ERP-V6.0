@@ -145,7 +145,7 @@ function delect(info){
 }
 //模板下载
 function download_file(){
-    jump_info('【 数据请求中 】','http://cdn.nodcloud.com/erp/xlsx/供应商导入模板.xlsx',true);
+    jump_info('【 数据请求中 】','http://cdn.KAITUOCN.COM/erp/xlsx/供应商导入模板.xlsx',true);
 }
 //导入操作
 function imports(){

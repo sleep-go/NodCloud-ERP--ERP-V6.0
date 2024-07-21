@@ -56,16 +56,16 @@ if (needCLodop()) {
 
 //====获取LODOP对象的主过程：====
 function getLodop(oOBJECT, oEMBED) {
-    var strHtmInstall = "<font color='#FF00FF'>打印控件未安装!点击这里<a href='//cdn.nodcloud.com/erp/print/install_lodop32.zip' target='_self'>执行安装</a>,安装后请刷新页面或重新进入。</font>";
-    var strHtmUpdate = "<font color='#FF00FF'>打印控件需要升级!点击这里<a href='//cdn.nodcloud.com/erp/print/install_lodop32.zip' target='_self'>执行升级</a>,升级后请重新进入。</font>";
-    var strHtm64_Install = "<font color='#FF00FF'>打印控件未安装!点击这里<a href='//cdn.nodcloud.com/erp/print/install_lodop64.zip' target='_self'>执行安装</a>,安装后请刷新页面或重新进入。</font>";
-    var strHtm64_Update = "<font color='#FF00FF'>打印控件需要升级!点击这里<a href='//cdn.nodcloud.com/erp/print/install_lodop64.zip' target='_self'>执行升级</a>,升级后请重新进入。</font>";
+    var strHtmInstall = "<font color='#FF00FF'>打印控件未安装!点击这里<a href='//cdn.KAITUOCN.COM/erp/print/install_lodop32.zip' target='_self'>执行安装</a>,安装后请刷新页面或重新进入。</font>";
+    var strHtmUpdate = "<font color='#FF00FF'>打印控件需要升级!点击这里<a href='//cdn.KAITUOCN.COM/erp/print/install_lodop32.zip' target='_self'>执行升级</a>,升级后请重新进入。</font>";
+    var strHtm64_Install = "<font color='#FF00FF'>打印控件未安装!点击这里<a href='//cdn.KAITUOCN.COM/erp/print/install_lodop64.zip' target='_self'>执行安装</a>,安装后请刷新页面或重新进入。</font>";
+    var strHtm64_Update = "<font color='#FF00FF'>打印控件需要升级!点击这里<a href='//cdn.KAITUOCN.COM/erp/print/install_lodop64.zip' target='_self'>执行升级</a>,升级后请重新进入。</font>";
     var strHtmFireFox = "<font color='#FF00FF'>（注意：如曾安装过Lodop旧版附件npActiveXPLugin,请在【工具】->【附加组件】->【扩展】中先卸它）</font>";
     var strHtmChrome = "<font color='#FF00FF'>(如果此前正常，仅因浏览器升级或重安装而出问题，需重新执行以上安装）</font>";
-    var strCLodopInstall_1 = "<font color='#FF00FF'>WEB打印服务未安装启动，点击这里<a href='//cdn.nodcloud.com/erp/print/CLodop_Setup_for_Win32NT.zip' target='_self'>下载执行安装</a>";
+    var strCLodopInstall_1 = "<font color='#FF00FF'>WEB打印服务未安装启动，点击这里<a href='//cdn.KAITUOCN.COM/erp/print/CLodop_Setup_for_Win32NT.zip' target='_self'>下载执行安装</a>";
     var strCLodopInstall_2 = "（若此前已安装过，可<a href='CLodop.protocol:setup' target='_self'>点这里直接再次启动</a>）";
     var strCLodopInstall_3 = "，成功后请刷新本页面。</font>";
-    var strCLodopUpdate = "<font color='#FF00FF'>WEB打印服务需升级!点击这里<a href='//cdn.nodcloud.com/erp/print/CLodop_Setup_for_Win32NT.zip' target='_self'>执行升级</a>,升级后请刷新页面。</font>";
+    var strCLodopUpdate = "<font color='#FF00FF'>WEB打印服务需升级!点击这里<a href='//cdn.KAITUOCN.COM/erp/print/CLodop_Setup_for_Win32NT.zip' target='_self'>执行升级</a>,升级后请刷新页面。</font>";
     var LODOP;
     try {
         var ua = navigator.userAgent;

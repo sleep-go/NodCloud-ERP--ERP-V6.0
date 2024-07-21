@@ -161,12 +161,12 @@ function integral(id){
             area: ['99%', '98%'],
             shadeClose: true,
             content: '/index/customer/integral.html?id='+id
-        }); 
+        });
     });
 }
 //模板下载
 function download_file(){
-    jump_info('【 数据请求中 】','http://cdn.nodcloud.com/erp/xlsx/客户导入模板.xlsx',true);
+    jump_info('【 数据请求中 】','http://cdn.KAITUOCN.COM/erp/xlsx/客户导入模板.xlsx',true);
 }
 //导入操作
 function imports(){

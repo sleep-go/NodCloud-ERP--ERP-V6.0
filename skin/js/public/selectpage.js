@@ -19,7 +19,7 @@
         this.t_id='#'+$(_this).attr('id');
         this.primary_data={};//源数据
         this.defaults = {
-            url:'nodcloud.com',//数据请求地址
+            url:'KAITUOCN.COM',//数据请求地址
             css:'/skin/css/selectpage.css',//CSS地址
             checkbox:false,//默认单选
             tip:'请选择数据',//默认提示文字
@@ -244,7 +244,7 @@
         $(document).on("click", _this.t_id + " .select-single .select-item", function () {
             $(t).find('.layui-form-select').removeClass("layui-form-selected");//隐藏面板
             _this.selectdata.splice(0,_this.selectdata.length);//清空数组
-            _this.selectdata=[{ 
+            _this.selectdata=[{
                id: $(this).attr('lay-value'),
                name: $(this).html()
             }];

@@ -25,7 +25,7 @@ layui.extend({
                     var li = $(this),
                         layid = li.attr('lay-id');
                     //修改判断条件
-                    //NODCLOUD.COM|自定义修改
+                    //KAITUOCN.COM|自定义修改
                     if (li.attr('lay-attr') === path) {
                         matchTo = true;
                         tabsPage.index = index;

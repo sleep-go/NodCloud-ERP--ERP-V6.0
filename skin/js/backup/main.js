@@ -8,7 +8,7 @@ layui.use('table', function() {
         cols:  [formfield],
         url: '/index/backup/backup_list',
         page: true,
-        limit: 30,  
+        limit: 30,
         limits: [30,60,90,150,300],
         method: 'post'
     });//渲染表格
@@ -39,7 +39,7 @@ function search() {
 }
 //备份数据
 function new_backup(){
-    ajax('POST','/index/backup/new_backup',{"by": 'nodcloud.com'},function(resule){
+    ajax('POST','/index/backup/new_backup',{"by": 'KAITUOCN.COM'},function(resule){
         if(resule.state=='success'){
             search();
             dump('备份成功!');

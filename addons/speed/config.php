@@ -19,7 +19,7 @@ class Config {
             'info'=>'该插件可优化页面数据，提高访问速度。',
             'only'=>$this->only,
             'ver'=>'1.0',
-            'author'=>'NODCLOUD.COM'
+            'author'=>'KAITUOCN.COM'
         ];
     }
     //安装

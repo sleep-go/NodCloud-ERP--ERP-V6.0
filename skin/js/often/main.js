@@ -1,6 +1,6 @@
 layui.use('form', function(){
     var form = layui.form;
-    ajax('POST','/index/often/often_list',{'by':'nodcloud.com'},function(resule){
+    ajax('POST','/index/often/often_list',{'by':'KAITUOCN.COM'},function(resule){
         if(resule.state=='success'){
             for (var i = 0; i < resule.info.length; i++) {
                 var html='<input type="checkbox" title="'+resule.info[i].name+'" nod="'+resule.info[i].url+'" root="'+resule.info[i].root+'"';

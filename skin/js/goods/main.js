@@ -213,7 +213,7 @@ function detail(id){
                                 }
                             },true);
                         }
-                        
+
                     }
                 }
             });
@@ -258,7 +258,7 @@ function delect(info){
 }
 //模板下载
 function download_file(){
-    jump_info('【 数据请求中 】','http://cdn.nodcloud.com/erp/xlsx/商品导入模板.xlsx',true);
+    jump_info('【 数据请求中 】','http://cdn.KAITUOCN.COM/erp/xlsx/商品导入模板.xlsx',true);
 }
 //导入操作
 function imports(){
@@ -312,7 +312,7 @@ function set_attribute(){
         //排除扩展属性为空的
         if(subinfo.length>0){
             var html="<tr><th>"+attribute[i].name+"</th><td>";
-            for (var s = 0; s < subinfo.length; s++) { 
+            for (var s = 0; s < subinfo.length; s++) {
                 html+="<input type='checkbox' value='"+subinfo[s].id+"' title='"+subinfo[s].name+"' lay-skin='primary' lay-filter='attribute'>";
             }
             html+="</td></tr>";
@@ -356,22 +356,22 @@ function set_attr(){
     $('#attr_main').append(tr_html);//添加数据
 }
 //组合可变长数组参数
-function combina_arr(){  
+function combina_arr(){
     var heads=arguments[0][0];
-    for(var i=1,len=arguments[0].length;i<len;i++){  
-        heads=AddNewType(heads,arguments[0][i]);  
-    }  
-    return heads;  
+    for(var i=1,len=arguments[0].length;i<len;i++){
+        heads=AddNewType(heads,arguments[0][i]);
+    }
+    return heads;
 }
 //在组合结果上添加新规格
-function AddNewType(heads,choices){  
+function AddNewType(heads,choices){
     var result=[];
-    for(var i=0,len=heads.length;i<len;i++){  
-        for(var j=0,lenj=choices.length;j<lenj;j++){  
+    for(var i=0,len=heads.length;i<len;i++){
+        for(var j=0,lenj=choices.length;j<lenj;j++){
             result.push(heads[i]+','+choices[j]);
-        }  
-    }  
-    return result;  
+        }
+    }
+    return result;
 }
 //获取辅助属性信息
 function attr_info(){

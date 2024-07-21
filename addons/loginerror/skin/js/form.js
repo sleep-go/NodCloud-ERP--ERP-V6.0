@@ -46,7 +46,7 @@ function empty(){
             shadeClose: true
         }, function() {
             ajax('POST','/index/plug/more?plug_info=loginerror/main/empty_loginerror',{
-                "by": 'nodcloud.com'
+                "by": 'KAITUOCN.COM'
             },function(resule){
                 if(resule.state=='success'){
                     search();

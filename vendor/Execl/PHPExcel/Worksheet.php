@@ -2491,7 +2491,7 @@ class PHPExcel_Worksheet implements PHPExcel_IComparable
                             if ($calculateFormulas) {
                                 $returnValue[$rRef][$cRef] = $cell->getCalculatedValue();
                             } else {
-                                //解决获取数据为科学计数法问题|nodcloud.com
+                                //解决获取数据为科学计数法问题|KAITUOCN.COM
                                 $returnValue[$rRef][$cRef] = $cell->getFormattedValue();
                                 //$returnValue[$rRef][$cRef] = $cell->getValue();
                             }

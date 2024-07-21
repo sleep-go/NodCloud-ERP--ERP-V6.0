@@ -4,7 +4,7 @@
  @Author：贤心
  @Site：http://www.layui.com/admin/
  @License：LPPL
-    
+
  */
 
 layui.define('view', function(exports) {
@@ -695,7 +695,7 @@ layui.define('view', function(exports) {
             }, sideMenu = $('#' + SIDE_MENU),
             SIDE_NAV_ITEMD = 'layui-nav-itemed',
             //捕获对应菜单
-            //NODCLOUD.COM|自定义修改
+            //KAITUOCN.COM|自定义修改
             matchMenu = function(list) {
                 $(list).parent().find('.layui-nav-itemed,.layui-this').removeClass('layui-nav-itemed layui-this');
                 list.each(function() {

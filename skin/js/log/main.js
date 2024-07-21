@@ -15,7 +15,7 @@ layui.use(['table','laydate'], function() {
         cols:  [formfield],
         url: '/index/log/log_list',
         page: true,
-        limit: 30,  
+        limit: 30,
         limits: [30,60,90,150,300],
         method: 'post',
         where: search_info('obj'),
@@ -45,7 +45,7 @@ function empty(){
             offset: '6%'
         }, function() {
             //发送请求
-            ajax('POST','/index/log/empty_log',{"by": 'nodcloud.com'},function(resule){
+            ajax('POST','/index/log/empty_log',{"by": 'KAITUOCN.COM'},function(resule){
                 if(resule.state=='success'){
                     search();
                     dump('清空成功!');
