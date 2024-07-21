@@ -1,5 +1,5 @@
 <?php
-//点可云安装向导
+//凯拓安装向导
 if(is_dir('install')){
     if (!file_exists('install/install.lock')) {
         header("Location:/install"); 

@@ -878,7 +878,7 @@ function get_mysql_field($nod){
 }
 //获取最新版本
 function new_ver(){
-    $url='https://www.nodcloud.com/console/api/get_ver';
+    $url='https://www.kaituocn.com/console/api/get_ver';
     $param=['ver'=>get_ver()];
     $resule=json_decode(http($url,$param,'POST'),true);
     return $resule['info'];
